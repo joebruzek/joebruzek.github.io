@@ -11,30 +11,30 @@ function toggleDark() {
     for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
         element.classList.toggle("teal");
-        element.classList.toggle("darken-2");
+        element.classList.toggle("darken-3");
+        element.classList.toggle("white-text");
     }
     elements = document.getElementsByClassName('dark1');
     for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
-        element.classList.toggle("blue-grey");
+        element.classList.toggle("grey");
         element.classList.toggle("darken-4");
+        element.classList.toggle("white-text");
     }
 
     elements = document.getElementsByClassName('dark2');
     for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
-        element.classList.toggle("blue-grey");
-        element.classList.toggle("darken-2");
+        element.classList.toggle("grey");
+        element.classList.toggle("darken-3");
+        element.classList.toggle("white-text");
     }
 
-    elements = document.getElementsByClassName('darktext');
+    elements = document.getElementsByClassName('dark3');
     for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
-        if (element.style.color == "white") {
-            element.style.color = "black";
-        } else {
-            element.style.color = "white";
-        }
+        element.classList.toggle("black");
+        element.classList.toggle("white-text");
     }
 
     elements = document.getElementById("dark-toggle-item");
