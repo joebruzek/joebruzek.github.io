@@ -38,11 +38,17 @@ function toggleDark() {
     }
 
     elements = document.getElementById("dark-toggle-item");
-    console.log(elements);
-    console.log(elements.innerHTML);
     if (elements.innerHTML.substring(0, 4) == "Dark") {
         elements.innerHTML = "Light Theme";
     } else {
         elements.innerHTML = "Dark Theme";
     }
+
+    elements = document.getElementsByClassName("indicator");
+    for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        element.classList.toggle("white");
+        element.classList.toggle("amber");
+    }
+
 }
