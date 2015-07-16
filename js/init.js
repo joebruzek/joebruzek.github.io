@@ -1,10 +1,4 @@
-(function($) {
-    $(function() {
 
-        $('.button-collapse').sideNav();
-
-    }); // end of document ready
-})(jQuery); // end of jQuery name space
 
 function toggleDark() {
     var elements = document.getElementsByClassName('dark');
@@ -38,8 +32,6 @@ function toggleDark() {
     }
 
     elements = document.getElementById("dark-toggle-item");
-    console.log(elements);
-    console.log(elements.innerHTML);
     if (elements.innerHTML.substring(0, 4) == "Dark") {
         elements.innerHTML = "Light Theme";
     } else {
