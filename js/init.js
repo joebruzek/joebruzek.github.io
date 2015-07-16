@@ -51,4 +51,24 @@ function toggleDark() {
         element.classList.toggle("amber");
     }
 
-}
+};
+
+var HttpClient = function() {
+    this.get = function(aUrl, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() { 
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
+
+        anHttpRequest.open( "GET", aUrl, true );            
+        anHttpRequest.send( null );
+    }
+};
+
+aClient = new HttpClient();
+aClient.get('http://joebruzek.com/json_sample.json', function(response) {
+    console.log("Testing out grabbing data from a server hosted JSON file");
+    console.log(response);
+    console.log("I'll probably load all the content this way");
+});
