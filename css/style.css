@@ -19,10 +19,6 @@ main {
     flex: 1 0 auto;
 }
 
-.card {
-    height: 400px;
-}
-
 h1 {
     margin: 0;
     padding: 0;
@@ -56,6 +52,10 @@ h6 {
 p {
     margin: 0;
     padding: 0;
+}
+
+.row {
+    margin: 0;
 }
 /************************************
      Helper Utilities
@@ -99,7 +99,7 @@ p {
 
 .nav-height {
     padding-top: 1vh;
-    height: 50vh;
+    height: 30vh;
     width: 100%;
     top: 0;
 }
@@ -109,16 +109,7 @@ p {
 }
 
 .top-offset {
-    margin-top: 30vh;
-}
-
-@media (max-width: 992px) {
-    .nav-height {
-        height: 30vh;
-    }
-    .top-offset {
-        margin-top: 15vh;
-    }
+    margin-top: 15vh;
 }
 
 .nav-wrapper {
@@ -126,31 +117,30 @@ p {
     padding-right: 5%;
 }
 
+#titlecard {
+    background: url('http://portfolio.joebruzek.com/images/background-3.ec583a42.jpg');
+}
+
+.cursive {
+    font-size: 450%;
+    font-family: 'Lobster', cursive;
+}
+
 .header-large {
     height: 70%;
 }
 
-.profile-pic {
-    height: 75px;
-    width: auto;
+.fill-image {
+    width: 100%;
+    height: auto;
 }
 
 .introduction {
     text-align: center;
 }
 
-.introduction h4 {
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-
-.introduction h6 {
-    margin-bottom: 50px;
-}
-
-.introduction hr {
-    margin-bottom: 50px;
-    width: 10%;
+.introduction h5 {
+    line-height: 5rem;
 }
 
 .icon-block {
@@ -159,4 +149,21 @@ p {
 
 .waves-effect {
     color: white;
+}
+
+
+
+@media (max-width: 992px) {
+    .nav-height {
+        height: 30vh;
+    }
+    .top-offset {
+        margin-top: 15vh;
+    }
+    .cursive {
+        font-size: 300%;
+    }
+    .introduction h5 {
+        font-size: 100%;
+    }
 }

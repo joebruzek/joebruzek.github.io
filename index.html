@@ -5,23 +5,28 @@
     <title>Joe Bruzek</title>
     <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body class="dark1">
     <!-- Nav -->
-    <nav class="pink dark nav-height nav-position" role="navigation">
+    <nav class="deep-orange dark nav-height nav-position" role="navigation">
         <div class="nav-wrapper">
             <a id="logo-container" href="#" class="brand-logo">
                 Joe Bruzek
             </a>
-            <a class="right hide-on-med-and-down dropdown-button" href="#" data-constrainwidth="false" data-activates="theme-dropdown">Themes</a>
-            <ul id="theme-dropdown" class="dropdown-content dark1">
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="sass.html">Projects</a></li>
                 <li><a id="dark-toggle-item" class="waves-effect " onclick="toggleDark()">Dark Theme</a></li>
             </ul>
+            <!-- <a class="right hide-on-med-and-down dropdown-button" href="#" data-constrainwidth="false" data-activates="theme-dropdown">Themes</a>
+            <ul id="theme-dropdown" class="dropdown-content dark1">
+                <li><a id="dark-toggle-item" class="waves-effect " onclick="toggleDark()">Dark Theme</a></li>
+            </ul> -->
             <ul id="nav-mobile" class="side-nav dark1">
                 <li class="nav-height dark pink valign-wrapper">
-                    <img class="circle profile-pic valign" src="http://joebruzek.com/images/profile.4bde80d2.png">
+                    <!-- <img class="circle profile-pic valign" src="http://joebruzek.com/images/profile.4bde80d2.png"> -->
                     <h3>Joe Bruzek</h3>
                 </li>
                 <li><a class="" href="views/seek.html">See[k]</a></li>
@@ -35,90 +40,35 @@
         <div class="container">
             <div class="row top-offset">
                 <div class="col s12">
-                    <div class="card dark2">
+                    <div id="titlecard" class="card dark2">
                         <div class="card-content">
                             <div class="row">
                                 <div class="col s12 introduction">
-                                    <h4 class="">ABOUT ME</h4>
-                                    <h6 class="">ABOUT ME</h6>
-                                    <hr>
-                                    <button id="theme-link">Theme</button>
-                                    <a href="views/projects.html">link link</a>
+                                    <p class="cursive">Actively Designing the Future</p>
+                                    <!-- <a href="projects.html"><h6 class="">PROJECTS</h6></a> -->
+                                    <h5>Let's make things work</h5>
+                                    <!-- <button id="theme-link">Theme</button> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col s12">
-                    <ul class="tabs">
-                        <li class="tab col s6"><a class="active" href="#test1">Programming</a></li>
-                        <li class="tab col s6"><a href="#test2">Design</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row" id="test1"></div>
-            <div class="row" id="test2">
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
+            <!-- <div class="row" id="test2">
+                <img class="circle fill-image col s12 l4" src="images/joe.png">
+                <div class="col s12 l8">
+                    <h2>Find me at these places</h2>
+                    <div class="row">
+                        <img class="fill-image col s12 l4" src="http://portfolio.joebruzek.com/images/Octocat.f0e78318.png">
+                        <img class="fill-image col s12 l4" src="http://portfolio.joebruzek.com/images/linkedin.29dc0bba.png">
+                        <img class="fill-image col s12 l4" src="http://portfolio.joebruzek.com/images/twitter.5ef4c299.png">
                     </div>
                 </div>
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
-                    </div>
-                </div>
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
-                    </div>
-                </div>
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
-                    </div>
-                </div>
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
-                    </div>
-                </div>
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
-                    </div>
-                </div>
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
-                    </div>
-                </div>
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
-                    </div>
-                </div>
-                <div class="col s6 l4">
-                    <div class="tile fill-image-frame">
-                        <img src="http://materializecss.com/images/sample-1.jpg">
-                        <h4 class="tile-footer">Sample Tile</h4>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </main>
     <!-- Footer -->
-    <footer class="blue accent-1 page-footer dark2">
+    <!--  <footer class="blue accent-1 page-footer dark2">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -142,7 +92,7 @@
                 <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!--  Scripts-->
     <script data-main="js/index" src="js/lib/require.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
