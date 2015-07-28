@@ -108,6 +108,11 @@ p {
 .tabs .tab a {
     color: #FFFFFF;
 }
+
+.side-nav a {
+    line-height: 3rem;
+    height: auto;
+}
 /************************************
      Collabsible
 *************************************/
@@ -165,6 +170,9 @@ p {
 }
 
 @media (max-width: 992px) {
+    .nav-height {
+        height: 30vh;
+    }
     .collapsible .content {
         padding: 5%;
     }
