@@ -18,7 +18,7 @@ function linkTo(destination) {
     if (hasParam("theme")) {
         window.open(destination + ".html?theme=" + getParameterByName("theme"), "_self");
     } else {
-        window.open(destination);
+        window.open(destination + ".html", "_self");
     }
 };
 
