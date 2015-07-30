@@ -110,6 +110,10 @@ p {
 .padding {
     padding: 5% !important;
 }
+
+.light-padding {
+    padding: 2% !important;
+}
 /************************************
      General
 *************************************/
@@ -244,5 +248,8 @@ p {
     }
     .padding {
         padding: 5% 1% !important;
+    }
+    .light-padding {
+        padding: 1% !important;
     }
 }

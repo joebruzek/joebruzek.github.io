@@ -3,6 +3,8 @@
 
 <head>
     <title>Joe Bruzek</title>
+    <meta name="description" content="Senior at Virginia Tech, actively designing the future.">
+    <meta name="theme-color" content="#673ab7">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/projects.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -20,7 +22,7 @@
             </ul>
             <ul id="nav-mobile" class="side-nav dark1">
                 <li class="nav-height dark deep-purple valign-wrapper">
-                    <h3>Joe Bruzek</h3>
+                    <a onClick="linkTo('index')"><h3 class="white-text">Joe Bruzek</h3></a>
                 </li>
                 <li><a class="link-text" onClick="linkTo('index')">Home</a></li>
                 <li><a id="" class="dark-toggle-item link-text" onclick="toggleTheme(true)">Dark Theme</a></li>
@@ -44,13 +46,13 @@
         </div>
         <div class="container">
             <div class="row" id="development">
-                <ul class="collapsible" data-collapsible="accordion">
+                <ul class="collapsible" data-collapsible="expandable">
                     <li class="card dark2">
                         <div class="collapsible-header">
-                            <div class="fill-image-frame col s12 l4"><img class="padding" src="https://lh3.googleusercontent.com/aMgM24N2J7JmnWv1x_1yl_TVdIs9IGLBhe-TviOaHBgT0AiPQ8CMohoXYlJMF9ytHYbt=w300-rw"></div>
+                            <div class="fill-image-frame col s12 l4"><img class="padding" src="images/seek-color-logo.png"></div>
                             <div class="content col s12 l8">
                                 <h3 class="project-header">See[k] Android App</h3>
-                                <p>Knowing how long it takes to get from A to B is very important - distance, for many people, can be an abstract concept that is difficult to comprehend, while time is something that everyone has an instinctive ability to understand. See[k] aims to raise awareness of alternative forms of transportation through graphic based wayfinding signs throughout Blacksburg, VA. The See[k] Android app provides instant travel time comparisons to any location, and can launch real-time travel directions.</p>
+                                <p><br>Knowing how long it takes to get from A to B is very important - distance, for many people, can be an abstract concept that is difficult to comprehend, while time is something that everyone has an instinctive ability to understand. See[k] aims to raise awareness of alternative forms of transportation through graphic based wayfinding signs throughout Blacksburg, VA. The See[k] Android app provides instant travel time comparisons to any location, and can launch real-time travel directions.</p>
                             </div>
                         </div>
                         <div class="collapsible-body col s12">
@@ -60,7 +62,7 @@
                                 <p>Find out more about the See[k] project at our website: <a class="app-link color-link" href="http://seekdfa.com/">seekDFA.com</a></p>
                             </div>
                             <div class="col s12 l4">
-                                <img class="image-width" src="http://seekdfa.com/images/location.png">
+                                <img class="image-width" src="images/apps/seek-location.png">
                             </div>
                         </div>
                     </li>
@@ -79,36 +81,30 @@
                                 <p>You can see the code for NapMap on <a class="color-link app-link" href="https://github.com/joebruzek/NapMap-Android">Github</a> or find it in the <a class="color-link app-link" href="https://play.google.com/store/apps/details?id=com.bruzek.jbruzek.myapplication&hl=en">Google Play Store.</a></p>
                             </div>
                             <div class="col s12 l4">
-                                <img class="image-width padding" src="https://lh6.ggpht.com/zueJ4nB5xDphhV0QSOw91-MHgNVoCKB9ehEmaQTgB1m3XutlMc9_mjv2lEt6f0s8oc4=h900-rw">
+                                <img class="image-width padding" src="images/apps/napmap-burrus.png">
                             </div>
-                        </div>
-                    </li>
-                    <li class="card dark2">
-                        <div class="collapsible-header">
-                            <div class="fill-image-frame col s12 l4"><img src="http://animalsbreeds.com/wp-content/uploads/2014/11/Shiba-Inu-19.jpg"></div>
-                            <div class="content col s12 l8">
-                                <h3 class="project-header">Programming Thing</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae eros dolor. Cras fermentum interdum elit nec mollis. Nunc maximus neque sit amet fermentum lobortis. Sed ullamcorper, tellus sit amet condimentum vehicula, ex orci ultrices sem, quis consectetur justo lacus id augue. Maecenas quis malesuada lorem. Pellentesque tempus, mi sit amet bibendum consequat, urna felis pretium ipsum, eu sollicitudin justo quam sit amet neque. In quis neque laoreet, sodales justo sed, egestas justo.</p>
-                            </div>
-                        </div>
-                        <div class="collapsible-body col s12">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae eros dolor. Cras fermentum interdum elit nec mollis. Nunc maximus neque sit amet fermentum lobortis. Sed ullamcorper, tellus sit amet condimentum vehicula, ex orci ultrices sem, quis consectetur justo lacus id augue. Maecenas quis malesuada lorem. Pellentesque tempus, mi sit amet bibendum consequat, urna felis pretium ipsum, eu sollicitudin justo quam sit amet neque. In quis neque laoreet, sodales justo sed, egestas justo.</p>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="row" id="design">
-                <ul class="collapsible" data-collapsible="accordion">
+                <ul class="collapsible" data-collapsible="expandable">
                     <li class="card dark2">
                         <div class="collapsible-header">
                             <div class="fill-image-frame col s12 l4 design-element"><img src="images/chair/bungee-chair-4.jpg"></div>
                             <div class="content col s12 l8 design-element">
                                 <h3 class="project-header">Bungee Chair</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae eros dolor. Cras fermentum interdum elit nec mollis. Nunc maximus neque sit amet fermentum lobortis. Sed ullamcorper, tellus sit amet condimentum vehicula, ex orci ultrices sem, quis consectetur justo lacus id augue. Maecenas quis malesuada lorem. Pellentesque tempus, mi sit amet bibendum consequat, urna felis pretium ipsum, eu sollicitudin justo quam sit amet neque. In quis neque laoreet, sodales justo sed, egestas justo.</p>
+                                <p><br>Designed and built using over 225 feet of bungee cable, this chair is a unique sitting expeirience that can be used both as a rocking or a stationary chair.</p>
                             </div>
                         </div>
                         <div class="collapsible-body col s12">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae eros dolor. Cras fermentum interdum elit nec mollis. Nunc maximus neque sit amet fermentum lobortis. Sed ullamcorper, tellus sit amet condimentum vehicula, ex orci ultrices sem, quis consectetur justo lacus id augue. Maecenas quis malesuada lorem. Pellentesque tempus, mi sit amet bibendum consequat, urna felis pretium ipsum, eu sollicitudin justo quam sit amet neque. In quis neque laoreet, sodales justo sed, egestas justo.</p>
+                            <div class="col s12">
+                                <p>The bungee chair originiated as an exercise in furniture design. The goal was to make a chair as simple as possible that went above and beyond the expectations of a standard chair. I worked with two other designers to design and produce this product. While designing the form of the chair, we envisioned it as more of an art installation than a piece of furniture, which led to the very fluid, rounded design. This shape also allows the chair to function in two ways: upright as a stationary chair, and on it's side as a rocking chair. When exploring materials for the final product we built multiple scale models out of plywood, cardboard, and acrylic. For the seat of the chair, we explored options including rope, polyester bands, and medical bungee cable. We decided on plywood and bungee cable for their appearance, availability, and production cost. Each side of the chair is made of two layers of plywood cut from a router and glued together. Thirteen wooden dowels provide structural support in key stress areas of the product. The final chair contains just over 225 feet of bungee cable woven in a diamond pattern to provide a visually appealing result and a very comfortable sitting surface. The final product can support users over 200 pounds and is comfortable for users ranging in height from below 5 feet tall to over 6 feet tall.</p>
+                            </div>
+                            <img class="col s12 l6 light-padding" src="images/chair/bungee-chair-3.jpg">
+                            <img class="col s12 l6 light-padding" src="images/chair/bungee-chair-1.jpg">
+                            <img class="col s12 l6 light-padding" src="images/chair/bungee-chair-5.jpg">
+                            <img class="col s12 l6 light-padding" src="images/chair/bungee-chair-2.jpg">
                         </div>
                     </li>
                     <li class="card dark2">
@@ -116,7 +112,7 @@
                             <div class="fill-image-frame col s12 l4 design-element"><img src="images/money/money.png"></div>
                             <div class="content col s12 l8 design-element">
                                 <h3 class="project-header">US Currency Redesign</h3>
-                                <p>An exploration in curreny design, I rebuilt the US Dollar from the ground up, incorporating modern technologies, advanced counterfeiting measures, and classic American imagery.</p>
+                                <p><br>An exploration in currency design, I rebuilt the US Dollar from the ground up, incorporating modern technologies, advanced counterfeiting measures, and classic American imagery.</p>
                             </div>
                         </div>
                         <div class="collapsible-body col s12">
@@ -136,18 +132,6 @@
                             <img class="col s4 padding" src="images/money/100-back.png">
                         </div>
                     </li>
-                    <li class="card dark2">
-                        <div class="collapsible-header">
-                            <div class="fill-image-frame col s12 l4 design-element"><img src="http://sociorocketnewsen.files.wordpress.com/2013/10/shiba10.jpg?w=580&h=386"></div>
-                            <div class="content col s12 l8 design-element">
-                                <h3 class="project-header">Design Thing</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae eros dolor. Cras fermentum interdum elit nec mollis. Nunc maximus neque sit amet fermentum lobortis. Sed ullamcorper, tellus sit amet condimentum vehicula, ex orci ultrices sem, quis consectetur justo lacus id augue. Maecenas quis malesuada lorem. Pellentesque tempus, mi sit amet bibendum consequat, urna felis pretium ipsum, eu sollicitudin justo quam sit amet neque. In quis neque laoreet, sodales justo sed, egestas justo.</p>
-                            </div>
-                        </div>
-                        <div class="collapsible-body col s12">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae eros dolor. Cras fermentum interdum elit nec mollis. Nunc maximus neque sit amet fermentum lobortis. Sed ullamcorper, tellus sit amet condimentum vehicula, ex orci ultrices sem, quis consectetur justo lacus id augue. Maecenas quis malesuada lorem. Pellentesque tempus, mi sit amet bibendum consequat, urna felis pretium ipsum, eu sollicitudin justo quam sit amet neque. In quis neque laoreet, sodales justo sed, egestas justo.</p>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -155,9 +139,9 @@
     <!-- Footer -->
     <footer class="deep-purple page-footer dark2">
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
+            <div class="row small-block-margin">
+                <div class="col s12 l6">
+                    <h5 class="white-text "><b>Contact Me</b>&nbsp;&nbsp;jbruzek@vt.edu</h5>
                 </div>
             </div>
         </div>
