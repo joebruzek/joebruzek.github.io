@@ -182,11 +182,11 @@ p {
 }
 
 .clouds {
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('http://portfolio.joebruzek.com/images/background-3.ec583a42.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../images/background.jpg');
 }
 
 .dark-clouds {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://portfolio.joebruzek.com/images/background-3.ec583a42.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/background.jpg');
 }
 
 #titlecard {
