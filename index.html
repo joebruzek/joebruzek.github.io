@@ -3,8 +3,11 @@
 
 <head>
     <title>Joe Bruzek</title>
+    <meta name="description" content="Senior at Virginia Tech, actively designing the future.">
+    <meta name="theme-color" content="#673ab7">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
@@ -12,22 +15,32 @@
 
 <body class="dark1">
     <!-- Nav -->
-    <nav class="pink dark nav-height nav-position" role="navigation">
+    <nav id="big-nav" class="deep-purple dark nav-height nav-position" role="navigation">
         <div class="nav-wrapper">
-            <a id="logo-container" href="#" class="brand-logo">
+            <a id="logo-container" href="#" class="brand-logo ">
                 Joe Bruzek
             </a>
-            <!-- <a class="right hide-on-med-and-down dropdown-button" href="#" data-constrainwidth="false" data-activates="theme-dropdown">Themes</a> -->
-            <!-- <ul id="theme-dropdown" class="dropdown-content dark1">
-                <li><a id="dark-toggle-item" class="waves-effect darktext" onclick="toggleDark()">Dark Theme</a></li>
+            <ul class="right hide-on-med-and-down">
+                <li><a onClick="linkTo('projects')">Projects</a></li>
+                <li><a id="" class="waves-effect dark-toggle-item" onclick="toggleTheme(true)">Dark Theme</a></li>
+            </ul>
+            <!-- <a class="right hide-on-med-and-down dropdown-button" href="#" data-constrainwidth="false" data-activates="theme-dropdown">Themes</a>
+            <ul id="theme-dropdown" class="dropdown-content dark1">
+                <li><a id="dark-toggle-item" class="waves-effect " onclick="toggleDark()">Dark Theme</a></li>
             </ul> -->
-            <!-- <ul id="nav-mobile" class="side-nav dark1">
-                <li class="nav-height dark pink valign-wrapper">
-                    <h3>Joe Bruzek</h3>
+            <ul id="nav-mobile" class="side-nav dark1">
+                <li class="nav-height dark deep-purple valign-wrapper">
+                    <!-- <img class="circle profile-pic valign" src="http://joebruzek.com/images/profile.4bde80d2.png"> -->
+                    <h3 class="">Joe Bruzek</h3>
                 </li>
-                <li><a id="dark-toggle-item" class="darktext" onclick="toggleDark()">Dark Theme</a></li>
-            </ul> -->
-            <!-- <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a> -->
+                <li><a class="link-text" onclick="linkTo('projects')">Projects</a></li>
+                <li><a id="" class="dark-toggle-item link-text" onclick="toggleTheme(true)">Dark Theme</a></li>
+                <br>
+                <li><a class="link-text" href="https://github.com/joebruzek">Github</a></li>
+                <li><a class="link-text" href="https://www.linkedin.com/pub/joe-bruzek/66/5b4/92">Linkedin</a></li>
+                <li><a class="link-text" href="https://twitter.com/BRUZEKcommaJOE">Twitter</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
     </nav>
     <!-- Body -->
@@ -35,25 +48,55 @@
         <div class="container">
             <div class="row top-offset">
                 <div class="col s12">
-                    <div class="card dark2">
+                    <div id="titlecard" class="card dark2 clouds">
                         <div class="card-content">
                             <div class="row">
                                 <div class="col s12 introduction">
-                                    <h4 class="darktext">Coming Soon</h4>
-                                    <a href="http://portfolio.joebruzek.com/#/"><h6 class="darktext">Check out my old site here</h6></a>
-                                    <hr>
+                                    <p class="cursive">Actively Designing the Future</p>
+                                    <p class="subtitle">Hi, I'm Joe. I'm a senior at Virginia Tech studying Computer Science and Industrial Design, who's building a better future through user-centered design.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row block-margin center-text">
+                <div class="col s12 l4">
+                    <h4 class="section-header">DEVELOPER</h4>
+                    <p class="section-content">Developer by education, I am proficient in Java and Javascript, with extensive experince in C. I have been building Android applications for over two years and have experience working on projects ranging in size from small single page apps to full sized enterprise applications. My apps aim to solve common problems with simple intuitive design, from finding a <a class="color-link app-link" href="https://play.google.com/store/apps/details?id=com.bruzek.jbruzek.myapplication">place to nap</a> on campus to choosing your <a class="color-link app-link" href="https://play.google.com/store/apps/details?id=com.designforamerica.seek&hl=en">mode of transportation.</a></p>
+                </div>
+                <div class="col s12 l4 valign-wrapper">
+                    <img class="valign circle fill-image profile-image" src="images/joe.png"></img>
+                </div>
+                <div class="col s12 l4">
+                    <h4 class="section-header">DESIGNER</h4>
+                    <p class="section-content">A passion for design drives me to create usable, beautiful products. At Virginia Tech I am an Industrial Design minor and am heavily involved in <a class="color-link app-link" href="http://designforamerica.com/">Design for America</a> and the <a class="color-link app-link" href="http://www.icat.vt.edu/">Institute for Creativity, Arts, and Technology.</a> I believe design can be used to create the next generation of consumer software that is not only visually beautiful, but also usable, efficient, and accessible.</p>
+                </div>
+            </div>
+            <div class="row block-margin center-text">
+                <h4 class="mobile-margin "><b>Connect With Me</b></h4>
+                <div class="col s3 l2 offset-l2 img-frame">
+                    <a href="https://github.com/joebruzek/resume/raw/master/Joseph%20A%20Bruzek%20-%20Resume.pdf"><img class="connect" src="images/resume-black.png"></a>
+                </div>
+                <div class="col s3 l2 img-frame">
+                    <a href="https://github.com/joebruzek"><img class="connect" src="images/github-black.png"></a>
+                </div>
+                <div class="col s3 l2 img-frame">
+                    <a href="https://www.linkedin.com/pub/joe-bruzek/66/5b4/92"><img class="connect" src="images/linkedin-black.png"></a>
+                </div>
+                <div class="col s3 l2 img-frame">
+                    <a href="https://twitter.com/BRUZEKcommaJOE"><img class="connect" src="images/twitter-black.png"></a>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Footer -->
-    <footer class="blue accent-1 page-footer dark2">
+    <footer class="deep-purple page-footer dark2">
         <div class="container">
-            <div class="row">
+            <div class="row small-block-margin">
+                <div class="col s12 l6">
+                    <h5 class="white-text "><b>Contact Me</b>&nbsp;&nbsp;jbruzek@vt.edu</h5>
+                </div>
             </div>
         </div>
         <div class="footer-copyright">
@@ -63,7 +106,9 @@
         </div>
     </footer>
     <!--  Scripts-->
-    <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <!-- <script data-main="js/index" src="js/lib/require.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script type="text/javascript">
     (function($) {
